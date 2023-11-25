@@ -115,6 +115,17 @@
             android:entryValues="@array/hardware_keys_action_values"
             android:persistent="false" />
 
+         <ListPreference
+        android:key="search_gesture_category"
+        android:persistent="false"
+        android:title="@string/search_gesture_category_title"
+        settings:controller="com.google.android.settings.gestures.GestureNavigationSettingsGoogleSearchController">
+        <SwitchPreferenceCompat
+            android:key="search_gesture_press_hold"
+            android:summary="@string/search_press_hold_gesture_summary"
+            android:title="@string/search_press_hold_gesture_title"
+            settings:controller="com.google.android.settings.gestures.GestureNavigationSettingsGoogleSearchController"
+            settings:highlightableMenuKey="@string/menu_key_system" />
     </PreferenceCategory>
 
     <PreferenceCategory

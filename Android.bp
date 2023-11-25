@@ -75,6 +75,7 @@ android_library {
         "res-lineage",
         "res-alpha",
         "AlphaSettings/res",
+        "SettingsGoogle/res",
     ],
 
     static_libs: [
