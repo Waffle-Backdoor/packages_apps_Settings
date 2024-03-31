@@ -71,6 +71,8 @@ android_library {
         "res-product",
         "res-ui",
         "AlphaSettings/res",
+        "SettingsGoogle/res",
+
     ],
     static_libs: [
         // External dependencies
@@ -200,4 +202,10 @@ filegroup {
 android_library_import {
     name: "glide",
     aars: ["libs/glide-4.16.0.aar"],
+}
+
+filegroup {
+    name: "Settings_manifest",
+    srcs: ["AndroidManifest.xml"],
+
 }
