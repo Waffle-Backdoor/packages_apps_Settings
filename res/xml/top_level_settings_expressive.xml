@@ -34,6 +34,16 @@
             android:summary="@string/alpha_settings_summary"
             settings:controller="com.alpha.settings.TopLevelSettingsPreferenceController"/>
 
+        <com.android.settings.widget.HomepagePreference
+            android:key="top_level_device_settings"
+            android:order="20"
+            android:icon="@drawable/ic_homepage_device"
+            android:title="OnePlus Settings"
+            android:summary="Extra settings for OnePlus Ace 3 | 12R">
+            <intent android:action="android.settings.DEVICE_SETTINGS"
+                    android:targetPackage="org.lineageos.device.settings"/>
+        </com.android.settings.widget.HomepagePreference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
